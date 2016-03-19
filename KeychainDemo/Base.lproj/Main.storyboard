@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BIU-Fg-pZW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--KeychainDemo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeychainDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chZ-gj-9Nd">
+                                <rect key="frame" x="129" y="86" width="62" height="30"/>
+                                <state key="normal" title="Add Item"/>
+                                <connections>
+                                    <action selector="addItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNb-C3-h0d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xv-K0-O3u">
+                                <rect key="frame" x="117.5" y="190" width="85" height="30"/>
+                                <state key="normal" title="Update Item"/>
+                                <connections>
+                                    <action selector="updateItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7HY-4j-dV5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boW-Md-M59">
+                                <rect key="frame" x="122" y="242" width="76" height="30"/>
+                                <state key="normal" title="Query Item"/>
+                                <connections>
+                                    <action selector="queryItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dd-S8-gab"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWp-j3-Rix">
+                                <rect key="frame" x="120.5" y="138" width="79" height="30"/>
+                                <state key="normal" title="Delete Item"/>
+                                <connections>
+                                    <action selector="deleteItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rC8-Oe-Dua"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PWp-j3-Rix" firstAttribute="top" secondItem="chZ-gj-9Nd" secondAttribute="bottom" constant="22" id="2gv-Kn-dGD"/>
+                            <constraint firstItem="chZ-gj-9Nd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RnI-Dy-02i"/>
+                            <constraint firstItem="PWp-j3-Rix" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UZP-WH-ybV"/>
+                            <constraint firstItem="5Xv-K0-O3u" firstAttribute="top" secondItem="PWp-j3-Rix" secondAttribute="bottom" constant="22" id="WXd-tQ-9I0"/>
+                            <constraint firstItem="boW-Md-M59" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZFV-7m-OME"/>
+                            <constraint firstItem="chZ-gj-9Nd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="aIW-ka-njL"/>
+                            <constraint firstItem="boW-Md-M59" firstAttribute="top" secondItem="5Xv-K0-O3u" secondAttribute="bottom" constant="22" id="egq-Z1-gIi"/>
+                            <constraint firstItem="5Xv-K0-O3u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vKp-o4-7cs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="KeychainDemo" id="BDb-EG-Lo3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="161"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sxV-lz-xYk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BIU-Fg-pZW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="alu-9S-1J0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CB9-SR-WHK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6z-Eb-zwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="161"/>
+        </scene>
+    </scenes>
+</document>
