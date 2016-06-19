@@ -1,4 +1,4 @@
 # KeychainDemo
 keychain demo
 
-See document at https://gist.github.com/jiangzhenjie/d98c26a1a91e840dbf5a
+See document at https://jiangzhenjie.github.io/ios-keychain-services/
